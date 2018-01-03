@@ -9,14 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dagger2.TestActivity">
+        <activity android:name=".activity.task.AActivity"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.BActivity"/>
+        <activity android:name=".activity.BActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.task.BActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.task.CActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.task.DActivity"
+            android:launchMode="singleInstance"/>
     </application>
 
 </manifest>

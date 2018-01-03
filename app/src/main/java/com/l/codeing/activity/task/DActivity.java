@@ -1,6 +1,6 @@
-package com.l.codeing.activity;
+package com.l.codeing.activity.task;
 
-import android.app.AlertDialog;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,35 +10,23 @@ import android.widget.TextView;
 /**
  * Description: AActivity
  * Creator: Cr.L
- * Date: 2017/12/27
+ * Date: 2018/1/3
  */
 
-public class AActivity extends BaseActivity{
-    public String log = "A";
-
+public class DActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TextView textView = new TextView(this);
-        textView.setText("A");
+        textView.setText("D");
         setContentView(textView);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // 创建构建器
-//                AlertDialog.Builder builder = new AlertDialog.Builder(AActivity.this);
-//                // 设置参数
-//                builder.setTitle("请做出选择");
-//                builder.create().show();
+            public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(AActivity.this,BActivity.class);
+                intent.setClass(DActivity.this,AActivity.class);
                 startActivity(intent);
             }
         });
-    }
-
-    @Override
-    public String getLog() {
-        return log;
     }
 }
