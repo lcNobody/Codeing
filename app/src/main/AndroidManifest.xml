@@ -17,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.BActivity"
+        <activity android:name=".activity.lifecycle.BActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".activity.task.BActivity"
             android:launchMode="singleTop"/>

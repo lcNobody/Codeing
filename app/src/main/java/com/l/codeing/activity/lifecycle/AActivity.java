@@ -1,6 +1,5 @@
-package com.l.codeing.activity;
+package com.l.codeing.activity.lifecycle;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;

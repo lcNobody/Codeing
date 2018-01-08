@@ -1,4 +1,4 @@
-package com.l.codeing.activity;
+package com.l.codeing.activity.lifecycle;
 
 import android.app.Activity;
 import android.os.Bundle;

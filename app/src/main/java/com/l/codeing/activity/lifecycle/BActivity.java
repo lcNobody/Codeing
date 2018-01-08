@@ -1,12 +1,8 @@
-package com.l.codeing.activity;
+package com.l.codeing.activity.lifecycle;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.widget.TextView;
-
-import com.l.codeing.utils.LogUtil;
 
 /**
  * Description: BActivity
