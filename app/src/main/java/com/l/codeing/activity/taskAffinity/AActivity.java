@@ -1,4 +1,4 @@
-package com.l.codeing.activity.task;
+package com.l.codeing.activity.taskAffinity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,11 +11,10 @@ import android.widget.TextView;
  * Description: AActivity
  * Creator: Cr.L
  * Date: 2018/1/3
- * A->B->C->D->A->B->C->D
- * A standard
- * B singleTop
- * C singleTask
- * D singleInstance
+ * A B taskAffinity 其他任务栈
+ * C D taskAffinity 当前包任务栈
+ *
+ * 此时B->C 或B->D
  */
 
 public class AActivity extends Activity {
