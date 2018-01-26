@@ -19,7 +19,7 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         <!--</activity>-->
-        <activity android:name=".activity.task.AActivity">
+        <activity android:name=".activity.lifecycle.AActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

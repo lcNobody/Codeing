@@ -14,76 +14,58 @@ import com.l.codeing.utils.LogUtil;
  */
 
 public class BaseActivity extends Activity {
-//    public static String log = "base";
-
-    public String getLog(){
-        return "base";
-    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-//        log = getLog();
         super.onCreate(savedInstanceState);
-        LogUtil.log(getLog(),"onCreate");
+        LogUtil.log(getClass().getSimpleName(),"onCreate");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        LogUtil.log(getLog(),"onStart");
+        LogUtil.log(getClass().getSimpleName(),"onStart");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        LogUtil.log(getLog(),"onRestart");
+        LogUtil.log(getClass().getSimpleName(),"onRestart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        LogUtil.log(getLog(),"onResume");
+        LogUtil.log(getClass().getSimpleName(),"onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        LogUtil.log(getLog(),"onPause");
+        LogUtil.log(getClass().getSimpleName(),"onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        LogUtil.log(getLog(),"onStop");
+        LogUtil.log(getClass().getSimpleName(),"onStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        LogUtil.log(getLog(),"onDestroy");
+        LogUtil.log(getClass().getSimpleName(),"onDestroy");
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        LogUtil.log(getLog(),"onSaveInstanceState");
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
-        LogUtil.log(getLog(),"onSaveInstanceState2");
+        LogUtil.log(getClass().getSimpleName(),"onSaveInstanceState");
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        LogUtil.log(getLog(),"onRestoreInstanceState");
-    }
-
-    @Override
-    public void onRestoreInstanceState(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onRestoreInstanceState(savedInstanceState, persistentState);
-        LogUtil.log(getLog(),"onRestoreInstanceState2");
+        LogUtil.log(getClass().getSimpleName(),"onRestoreInstanceState");
     }
 }

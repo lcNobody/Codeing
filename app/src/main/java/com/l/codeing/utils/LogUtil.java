@@ -13,7 +13,7 @@ public class LogUtil {
         Log.d("---------------",content);
     }
     public static void log(String name,String content){
-        Log.d(name,content);
+        Log.e(name,content);
     }
     public static void log(String name,Boolean content){
         Log.d(name,Boolean.toString(content));
